@@ -8,25 +8,24 @@ will behave (Should it be injected in the overlay? Does it have dependencies?)
 
 | Key                  | Description                                                                                                     | Optional |
 |----------------------|-----------------------------------------------------------------------------------------------------------------|:----------:|
-| name                 | Display name used in the UI                                                                                     |          |
-| version              | Version of the plugin. 0.x.x will mean beta and will be flagged as is in the UI                                 |          |
-| description          | Short description of what the plugin is doing                                                                   |          |
-| author               | Name(s) of the author(s)                                                                                        |          |
-| license              | License the plugin is under                                                                                     |          |
-| permissions          | List of permission the plugin is asking (`keystrokes`, `use_EUD`)                                               | x        |
-| dependencies         | List of plugin's dependencies                                                                                   | x        |
-| optionalDependencies | List of plugin's optional dependencies. Will only affect load order to ensure the plugin is loaded before yours | x        |
-| appMode              | Where the plugin should be injected. Can be `app`, `overlay`, or `both` (default to `app`)                      | x        |
+| name                 | Display name used in the UI.                                                                                     |          |
+| version              | Version of the plugin. 0.x.x will mean beta and will be flagged as so in the plugins section.                                 |          |
+| description          | Short description of what the plugin is doing.                                                                   |          |
+| author               | Name(s) of the author(s).                                                                                        |          |
+| license              | License the plugin is released under.                                                                                     |          |
+| permissions          | List of permission the plugin is asking (`keystrokes`, `use_EUD`).                                               | x        |
+| dependencies         | List of plugin's dependencies.                                                                                | x        |
+| optionalDependencies | List of plugin's optional dependencies. Will only affect load order to ensure the plugin is loaded before yours. | x        |
+| appMode              | Where the plugin should be injected. Can be `app`, `overlay`, or `both` (default to `app`).                      | x        |
 
 ## 2. No circumvention of Discord permissions
 
-Do not circumvent Discord permissions as well as attempt to bypass something restricted by the Discord client. This can be a potential security
-breach or invasion of staff's privacy in case of hidden channels.
+Do not circumvent Discord permissions as well as attempt to bypass something restricted by the Discord client. This can be a potential security breach or invasion of staff's privacy in case of hidden channels.
 
 ## 3. Meet a certain standard performance wise
 
-Plugins that are heavy in terms of resources used are not great for the user experience. Slower computers might not
-be able to run smoothly if your plugin is doing resource-heavy tasks, like for example having mutation observers.
+Plugins that are heavy in terms of resource usage are not great for the user experience. Slower computers may not
+be able to run smoothly if your plugin is doing resource-heavy tasks, for example having mutation observers.
 
 If you do need to perform resource-heavy tasks, try using a [web worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
 
