@@ -2,12 +2,12 @@
 
 ## 1. Properly structure your plugin's manifest
 
-All Powercord plugins requires a valid `manifest.json` file.
+All Powercord plugins require a valid `manifest.json` file.
 This file is used internally to give information about the plugin to the end user, as well as define how the plugin
 will behave (Should it be injected in the overlay? Does it have dependencies?)
 
 | Key                  | Description                                                                                                     | Optional |
-|----------------------|-----------------------------------------------------------------------------------------------------------------|----------|
+|----------------------|-----------------------------------------------------------------------------------------------------------------|:----------:|
 | name                 | Display name used in the UI                                                                                     |          |
 | version              | Version of the plugin. 0.x.x will mean beta and will be flagged as is in the UI                                 |          |
 | description          | Short description of what the plugin is doing                                                                   |          |
@@ -20,24 +20,24 @@ will behave (Should it be injected in the overlay? Does it have dependencies?)
 
 ## 2. No circumvention of Discord permissions
 
-And more generally no attempt to bypass something restricted by the Discord client. This can be a potential security
+Do not circumvent Discord permissions as well as attempt to bypass something restricted by the Discord client. This can be a potential security
 breach or invasion of staff's privacy in case of hidden channels.
 
 ## 3. Meet a certain standard performance wise
 
 Plugins that are heavy in terms of resources used are not great for the user experience. Slower computers might not
-be able to run smoothly if your plugin is doing resources-heavy tasks, like for example having mutation observers.
+be able to run smoothly if your plugin is doing resource-heavy tasks, like for example having mutation observers.
 
-If you do need to perform heavy tasks, try using a [web worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
+If you do need to perform resource-heavy tasks, try using a [web worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
 
 ## 4. Don't write harmful plugins
 
-Harmful plugins that abuses of Powercord APIs or Discord internals to do malicious stuff like spambots, keyloggers
+Harmful plugins that abuse Powercord APIs or Discord internals to do malicious things like spambots, keyloggers
 or anything else are strictly prohibited.
 
 ## 5. Do not have bad privacy practices
 
-Collecting user data using Powercord without consent is forbidden. All features that requires collection of user data
+Collecting user data using Powercord without consent is forbidden. All features that require the collection of user data
 should be opt-in, and if your plugin is based on user data please specify it in `permissions` manifest key.
 
 ## 6. Don't break other plugins
@@ -52,7 +52,7 @@ plugin with the same purpose.
 
 ## 8. Do **NOT** perform manual HTTP requests to Discord or the Gateway
 
-Discord internally have everything you'll need to retrieve data without directly calling the API or connecting to the
+Discord internally has everything you'll need to retrieve data without directly calling the API or connecting to the
 Gateway. Performing such actions may get user's account flagged for selfbotting or modding and banned for doing so.
 
 ## 9. Powercord Developers will never directly push in your plugin's repo
