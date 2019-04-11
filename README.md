@@ -34,7 +34,7 @@ If you do need to perform resource-heavy tasks, try using a [web worker](https:/
 Harmful plugins that abuse Powercord APIs or Discord internals to do malicious things like spambots, keyloggers
 or anything else are strictly prohibited.
 
-## 5. Do not have bad privacy practices
+## 5. Don't have bad privacy practices
 
 Collecting user data using Powercord without consent is forbidden. All features that require the collection of user data
 should be opt-in, and if your plugin is based on user data please specify it in `permissions` manifest key.
