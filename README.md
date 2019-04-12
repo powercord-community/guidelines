@@ -13,7 +13,7 @@ will behave (Should it be injected in the overlay? Does it have dependencies?)
 | description          | Short description of what the plugin is doing.                                                                   |          |
 | author               | Name(s) of the author(s).                                                                                        |          |
 | license              | License the plugin is released under.                                                                            |          |
-| permissions          | List of permission the plugin is asking (`keystrokes`, `use_eud`).                                               | x        |
+| permissions          | List of permission the plugin is asking (`keypresses`, `use_eud`).                                               | x        |
 | dependencies         | List of plugin's dependencies.                                                                                   | x        |
 | optionalDependencies | List of plugin's optional dependencies. Will only affect load order to ensure the plugin is loaded before yours. | x        |
 | appMode              | Where the plugin should be injected. Can be `app`, `overlay`, or `both` (default to `app`).                      | x        |
