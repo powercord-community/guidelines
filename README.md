@@ -1,10 +1,10 @@
 # Powercord Community Guidelines
 
-Those guidelines are set to ensure Powercord's ecosystem stays as awesome as possible, and to avoid malicious plugins,
-or plugins performing badly. The Powercord Staff will enforce **all** of those guidelines and take decisions we consider
-appropriate for plugins not complying with those guidelines, at our sole discretion.
+These guidelines are set to ensure Powercord's ecosystem stays as awesome as possible, and to avoid malicious plugins,
+or plugins performing badly. The Powercord Staff will enforce **all** of these guidelines and take decisions we consider
+appropriate for plugins not complying with these guidelines, at our sole discretion.
 
-**Note**: We may decide, depending on the context, to let a plugin that would not be compliant with those guidelines
+**Note**: We may decide, depending on the context, to let a plugin that would not be compliant with these guidelines
 pass. Those exceptions will be made at our sole discretion.
 
 ## The rules
@@ -47,7 +47,7 @@ should be opt-in (if possible), and properly reflect data collection with the `p
 
 ### 7. Limit use of external APIs
 
-External APIs, even open source, may secretely do malicious actions, as returning malicious data, logging your IP
+External APIs, even open source, may secretly do malicious actions, as returning malicious data, logging your IP
 address and more. If you have to use your API or another one that is not provided by a well-known entity (like Spotify
 API), please add the `ext_api` permission to your manifest.
 
@@ -72,7 +72,7 @@ the Gateway. Performing such actions may get user's account flagged for selfbott
 
 ### 11. Limit NSFW plugins
 
-We're not against plugins providing NSFW features, but they should be properly labeled and handled. If you plugin can
+We're not against plugins providing NSFW features, but they should be properly labeled and handled. If your plugin can
 provide NSFW but it isn't the main purpose, **NSFW features must be turned off by default**. If the main feature of
 the plugin is based on NSFW, please specify it in your manifest through the `nsfw` key, so we can label it as such.
 
