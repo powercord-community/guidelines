@@ -1,7 +1,7 @@
 # Powercord Community Guidelines
 
 Those guidelines are set to ensure Powercord's ecosystem stays as awesome as possible, and to avoid malicious plugins,
-or bad performances. The Powercord Staff will enforce **all** of those guidelines and take decisions we consider
+or plugins performing badly. The Powercord Staff will enforce **all** of those guidelines and take decisions we consider
 appropriate for plugins not complying with those guidelines, at our sole discretion.
 
 **Note**: We may decide, depending on the context, to let a plugin that would not be compliant with those guidelines
