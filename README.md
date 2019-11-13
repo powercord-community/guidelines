@@ -17,16 +17,16 @@ All Powercord plugins require a valid `manifest.json` file.
 This file is used internally to give information about the plugin to the end user, as well as define how the plugin
 will behave (Should it be injected in the overlay? Does it have dependencies?)
 
-### 2. Follow Discord and other services ToS
+### 2. Follow Discord's and other services' ToS
 
-Even if Powercord is by nature against Discord ToS, it doesn't mean that you're allowed to do everything you want. For
+Even if Powercord is by nature against Discord's ToS, it doesn't mean that you're allowed to do everything you want. For
 example scraping End User Data without consent is forbidden.
 
 ### 3. No circumvention of Discord permissions
 
 Do not circumvent Discord permissions as well as attempt to bypass something restricted by the Discord client. This can
-be a potential security breach or invasion of privacy (e.g. showing hidden channels is an invasion of staff privacy,
-storing deleted messages forever is an invasion of author's privacy (and forbidden by Discord ToS)).
+be a potential security breach or invasion of privacy (e.g. showing hidden channels is an invasion of staff's privacy,
+storing deleted messages forever is an invasion of author's privacy (and forbidden by Discord's ToS)).
 
 ### 4. Meet a certain standard performance wise
 
@@ -52,7 +52,7 @@ address and more. If you have to use your API or another one that is not provide
 API), please add the `ext_api` permission to your manifest.
 
 **Note**: If your plugin requires the use of an external custom-built backend, Powercord is ready to hook you up with
-free hosting and domain (`yourplugin.powercord.dev`). [More about that here](https://github.com/powercord-community/suggestions#about-backends).
+free hosting and a sub-domain (`yourplugin.powercord.dev`). [More about that here](https://github.com/powercord-community/suggestions#about-backends).
 
 ### 8. Avoid breaking other plugins
 
@@ -95,4 +95,4 @@ recommend some good practices (like not mixing `"` and `'` for example), but won
 ### We will never directly push to your plugin's repo
 
 Even if we have full access by being administrators of the organization, we'll never push to a plugin's repo unless
-we're invited to do so. We'll always prefer forking and making a PR. It's your plugin, and we don't have to push
+we're invited to do so. We'll always prefer forking and making a PR. It's your plugin, and we don't have to push.
