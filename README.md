@@ -4,8 +4,7 @@ These guidelines are set to ensure Powercord's ecosystem stays as awesome as pos
 or plugins performing badly. The Powercord Staff will enforce **all** of these guidelines and take decisions we consider
 appropriate for plugins not complying with these guidelines, at our sole discretion.
 
-**Note**: We may decide, depending on the context, to let a plugin that would not be compliant with these guidelines
-pass. Those exceptions will be made at our sole discretion.
+**Note**: We may decide, depending on the context, to let uncompliant plugins pass. These exceptions will be made at our sole discretion.
 
 ## The rules
 
@@ -20,35 +19,35 @@ will behave (Should it be injected in the overlay? Does it have dependencies?)
 ### 2. Follow Discord's and other services' ToS
 
 Even if Powercord is by nature against Discord's ToS, it doesn't mean that you're allowed to do everything you want. For
-example scraping End User Data without consent is forbidden.
+example, collecting End User Data without consent is forbidden.
 
 ### 3. No circumvention of Discord permissions
 
-Do not circumvent Discord permissions as well as attempt to bypass something restricted by the Discord client. This can
+Do not circumvent Discord permissions or attempt to bypass anything restricted by the Discord client. This can
 be a potential security breach or invasion of privacy (e.g. showing hidden channels is an invasion of staff's privacy,
 storing deleted messages forever is an invasion of author's privacy (and forbidden by Discord's ToS)).
 
 ### 4. Meet a certain standard performance wise
 
-Plugins that are heavy in terms of resource usage are not great for the user experience. Slower computers may not
-be able to run smoothly if your plugin is doing resource-heavy tasks, for example having mutation observers.
+Plugins that are heavy in terms of resource usage are not great for user experience. Slower computers may not
+be able to run smoothly if your plugin is performing resource-heavy tasks, for example having mutation observers.
 
-If you do need to perform resource-heavy tasks, try using a [web worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers).
+If you do need to perform resource-heavy tasks, consider using a [web worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers).
 
 ### 5. Do not write harmful plugins
 
 Harmful plugins that abuse Powercord APIs or Discord internals to do malicious things (including but not limited to
 spambots, keyloggers, scrapers, ...) are strictly prohibited.
 
-### 6. Respect user's privacy
+### 6. Respect user privacy
 
 Collecting user data using Powercord without consent is forbidden. All features that require the collection of user data
 should be opt-in (if possible), and properly reflect data collection with the `permissions` manifest key.
 
 ### 7. Limit use of external APIs
 
-External APIs, even open source, may secretly do malicious actions, as returning malicious data, logging your IP
-address and more. If you have to use your API or another one that is not provided by a well-known entity (like Spotify
+External APIs, even open source, may secretly do malicious actions such as returning malicious data, logging your IP
+address and more. If you have to use your own API or another one that is not provided by a well-known entity (like Spotify
 API), please add the `ext_api` permission to your manifest.
 
 **Note**: If your plugin requires the use of an external custom-built backend, Powercord is ready to hook you up with
@@ -56,7 +55,7 @@ free hosting and a sub-domain (`yourplugin.powercord.dev`). [More about that her
 
 ### 8. Avoid breaking other plugins
 
-Your plugin should be able to run, no matter what plugins the user installed. We internally have some protection to help
+Your plugin should be able to run regardless of which other plugins the user has installed. We internally have some protection to help
 preventing conflicts, but we can't do everything for you. If your plugin happens to be incompatible with another, try
 discussing with the plugin developer.
 
@@ -68,13 +67,13 @@ plugin with the same purpose.
 ### 10. Only perform manual HTTP requests to Discord if there are no other solutions
 
 Discord internally has mostly everything you'll need to retrieve data without directly calling the API or connecting to
-the Gateway. Performing such actions may get user's account flagged for selfbotting or modding and banned for doing so.
+the Gateway. Performing such actions may get user accounts flagged for selfbotting or modding, and banned for doing so.
 
 ### 11. Limit NSFW plugins
 
 We're not against plugins providing NSFW features, but they should be properly labeled and handled. If your plugin can
-provide NSFW but it isn't the main purpose, **NSFW features must be turned off by default**. If the main feature of
-the plugin is based on NSFW, please specify it in your manifest through the `nsfw` key, so we can label it as such.
+provide NSFW content but it isn't its main purpose, **NSFW features must be turned off by default**. If the main feature of
+the plugin is based on NSFW, please specify it in your manifest through the `nsfw` key, so that we can label it as such.
 
 ## How we handle plugins
 
@@ -95,4 +94,4 @@ recommend some good practices (like not mixing `"` and `'` for example), but won
 ### We will never directly push to your plugin's repo
 
 Even if we have full access by being administrators of the organization, we'll never push to a plugin's repo unless
-we're invited to do so. We'll always prefer forking and making a PR. It's your plugin, and we don't have to push.
+we're invited to do so. We'll always prefer forking and making a PR. It's your plugin, and we don't have to push. The only exception to this is an urgent security vulnerability; in the case of a high-risk vulnerability, we may hotfix your plugin to prevent widespread damage to users.
