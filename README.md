@@ -15,9 +15,9 @@ appropriate for plugins not complying with these guidelines, at our sole discret
 Everything you build for Powercord will have to follow those rules.
 
 ### 1. Do not promote or facilitate abusive behavior
-This includes but is not limited to:
-  - Any behavior that breaks Discord's ToS (excluding client modding);
-  - Any behavior that would abuse the Discord API;
+This includes but is not limited to:<br>
+  - Any behavior that breaks Discord's ToS (excluding client modding);<br>
+  - Any behavior that would abuse the Discord API;<br>
   - Distributing malicious and/or harmful plugins (malware).
 
 ### 2. Take precaution handling End User Data
