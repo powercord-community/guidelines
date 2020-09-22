@@ -18,7 +18,9 @@ Everything you build for Powercord will have to follow those rules.
 This includes but is not limited to:<br>
   - Any behavior that breaks Discord's ToS (excluding client modding);<br>
   - Any behavior that would abuse the Discord API;<br>
-  - Distributing malicious and/or harmful plugins (malware).
+  - Distributing malicious and/or harmful plugins (malware);<br>
+  - Distributing plugins which serve to confuse and/or annoy users.<br>
+    - For example: spoiler-spam, exploit of obscure client behavior.
 
 ### 2. Take precaution handling End User Data
 End User Data of other users must be handled with caution with regards to privacy. For example, logging all deleted messages is prohibited.
